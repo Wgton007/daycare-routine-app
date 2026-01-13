@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Attendance - Daycare</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS do projeto -->
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="components.css">
+    <link rel="stylesheet" href="pages.css">
+</head>
+<body class="attendance-page">
+
+    <div class="container card">
+        <h2>Daily Check-In</h2>
+
+        <!-- links de navegação -->
+        <p class="nav-links">
+            <a href="home.html">Home</a>
+        </p>
+        <br>
+
+        <!-- tabela de presença -->
+        <table class="attendance-table">
+            <thead>
+                <tr>
+                    <th class="col-id">ID</th>
+                    <th class="col-name">Name</th>
+                    <th class="col-present">Present</th>
+                </tr>
+            </thead>
+            <tbody id="attendanceTableBody">
+                <!-- preenchida pelo JS -->
+            </tbody>
+        </table>
+
+        <!-- controles: dropdown e botão salvar -->
+        <div class="attendance-controls">
+            <div class="attendance-left">
+                <label for="dateSelect">Select Date:</label>
+                <select id="dateSelect"></select>
+            </div>
+            <div class="attendance-right">
+                <button type="button" id="saveAttendance">Save Attendance</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="attendance.js"></script>
+</body>
+</html>

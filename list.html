@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Children's List - Daycare</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS do projeto -->
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="components.css">
+    <link rel="stylesheet" href="pages.css">
+</head>
+<body class="children-page">
+
+    <div class="container card">
+        <h2>Children's List</h2>
+
+        <!-- Navegação -->
+        <div class="nav-links">
+            <a href="home.html">Home</a> |
+            <a href="index.html">Register a New Child</a>
+        </div>
+        <br>
+        <!-- Botão Print / PDF -->
+        <div class="list-actions">
+            <button id="btnPrintPDF">Print / Save as PDF</button>
+            <p class="print-hint">
+  Print or choose <strong>"Save as PDF"</strong> in the printer options window.
+</p>
+        </div>
+        <br>
+        <!-- Tabela -->
+        <table class="children-table">
+            <thead>
+                <tr>
+                    <th class="col-id">ID</th>
+                    <th class="col-name">Name</th>
+                    <th class="col-date">Birth Date</th>
+                    <th class="col-guardian">Guardian</th>
+                    <th class="col-phone">Phone</th>
+                    <th class="col-email">Email</th>
+                    <th class="col-address">Address</th>
+                    <th class="col-notes">Observations</th>
+                    <th class="col-actions">Actions</th>
+                </tr>
+            </thead>
+            <tbody id="childrenTableBody">
+                <!-- preenchido pelo JS -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="list.js"></script>
+</body>
+</html>
