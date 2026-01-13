@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Backup / Emails - Ely's Day Care</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="base.css">
+<link rel="stylesheet" href="components.css">
+<link rel="stylesheet" href="pages.css">
+</head>
+
+<body class="backup-page">
+
+<div class="container card">
+<h2>Backup / Emails</h2>
+
+<p class="nav-links">
+<a href="home.html">Home</a>
+</p>
+
+<div class="backup-email-container">
+
+<!-- EMAIL -->
+<div class="email-section">
+<h3>Send Email to Parents</h3>
+
+<label>Select Parent</label>
+<select id="emailSelect">
+    <option value="" disabled selected>Select recipient</option>
+    <option value="ALL">All Parents</option>
+</select>
+
+<label>Subject</label>
+<input 
+    type="text" 
+    id="emailSubject"
+    autocomplete="off"
+    autocorrect="off"
+    autocapitalize="off"
+    spellcheck="false"
+>
+
+<label>Message</label>
+<textarea id="emailBody"></textarea>
+
+<button id="btnSendEmail">Send Email</button>
+</div>
+
+<!-- BACKUP -->
+<div class="backup-section">
+<h3>Backup</h3>
+
+<button id="btnDownloadJSON">Download JSON</button>
+<button id="btnSavePDF">Save Report (PDF)</button>
+<button id="btnOpenDrive">Open Google Drive</button>
+
+<small>
+Save files locally and upload to Google Drive for safekeeping.
+</small>
+</div>
+
+</div>
+
+<script src="backup.js"></script>
+</body>
+</html>
