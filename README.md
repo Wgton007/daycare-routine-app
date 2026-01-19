@@ -80,7 +80,7 @@ Wellington Ferreira
 Estudante de Análise e Desenvolvimento de Sistemas – 1º semestre
 Centro Universitário Internacional UNINTER
 
-📌 Observação
+Observação:
 
 Este sistema não utiliza banco de dados nem servidor backend.
-As lógicas e armazenamentos são feitos no lado do cliente (navegador), com fins educacionais e demonstrativos.
+
